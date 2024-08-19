@@ -11,5 +11,7 @@ import(
 
 func main{
     __dirname, err := dirname.GetDirname();
+
+    ...
 }
 
