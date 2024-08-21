@@ -7,6 +7,7 @@ A simple library to get the relative directory path similar to __dirname in Node
 go get github.com/mgperkowski/dirname
 ```
 
+
 ##Features
 
 Offers two methods to return either the directory that the executable is stored in or the directory the process was called from.
