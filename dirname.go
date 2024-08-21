@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func GetDirname() (string, error) {
+func GetExecutableDirname() (string, error) {
 
 	execPath, err := os.Executable()
 
@@ -24,6 +24,18 @@ func GetDirname() (string, error) {
 			fmt.Println("Error getting current working directory:", err)
 			return "", err
 		}
+	}
+
+	return dirname, nil
+}
+
+func GetWorkingDirname() (string, error) {
+
+	dirname, err := os.Getwd()
+
+	if err != nil {
+		fmt.Println("Error getting current working directory:", err)
+		return "", err
 	}
 
 	return dirname, nil
